@@ -29,6 +29,7 @@ class Program
 
         if (timeOfFlight >= 45)
         {
+            Console.WriteLine("O PROJÉTIL FICOU MUITO TEMPO NO ALTO E CAIU EM ALGUÉM");
             Person person = new Person();
 
             Random random = new Random();
@@ -43,14 +44,14 @@ class Program
                 case 2:
                     person.Shoulders = random.Next(0, 2) == 1; // 50% de chance de sobreviver
                     if (person.Shoulders)
-                        Console.WriteLine("A pessoa sobreviveu ao impacto nos ombros. ela só tinha 50% de chances de vida");
+                        Console.WriteLine("A pessoa sobreviveu ao impacto nos ombros, mas ela só tinha 50% de chances de vida");
                     else
                         Console.WriteLine("A pessoa foi atingida nos ombros e não resistiu mesmo com 50% de chances de vida.");
                     break;
                 case 3:
                     person.Foot = random.Next(0, 6) < 5; // 80% de chance de sobreviver
                     if (person.Foot)
-                        Console.WriteLine("A pessoa sobreviveu ao impacto nos pés. ela tinha 80% de chance de vida");
+                        Console.WriteLine("A pessoa sobreviveu ao impacto nos pés, ela tinha 80% de chance de vida");
                     else
                         Console.WriteLine("A pessoa foi atingida nos pés e não resistiu mesmo com 80% de chances de vida.");
                     break;
