@@ -58,7 +58,8 @@ class Program
         }
         else
         {
-            Console.WriteLine("Ninguem foi atingido");
+            Console.WriteLine("Ninguem foi atingido pois o projétil cai no chão");
+            Console.WriteLine("O projétil não ficou muito tempo noa alto pra cair em alguem");
         }
     }
 }
